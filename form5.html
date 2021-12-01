@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form Design V</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <style>
+        .form{
+            background-color: #f2f2f2;
+            background-size: 100% 900px;
+            padding: 50px;
+        }
+        .card{
+            width: 500px;
+            height: 450px;
+            margin: auto;
+            /* background-color: red; */
+            background-color: white;
+        }
+        .card-sign{
+            background-image: url(img/five.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%,cover;
+            padding: 30px;
+            border-radius: 5px;
+        }
+        .card-sign h1{
+            text-align: center;
+            color: white;
+            font-size: 30px;
+            font-weight: 50px;
+        }
+        input[type=text],input[type=password] {
+            width: 300px;
+            padding: 12px 0;
+            margin: 20px;
+            /* margin-bottom: 30px; */
+            box-sizing: border-box;
+            border: none;
+            border-bottom: 1px solid gray;
+            outline: none;
+        }
+        .label{
+            margin-left: 50px;
+            color: gray;
+        }
+        input[type=checkbox]{
+            margin-left: 130px;
+        }
+        .check a{
+            margin-left: 70px;
+            text-decoration: none;
+            color: gray;
+        }
+        .btn{
+            position: relative;
+        }
+        input[type=button]{
+            position: absolute;
+            padding: 10px 40px;
+            left: 27%;
+            margin-top: 8%;
+            border-radius: 20px;
+            background-color: rgb(28, 243, 28);
+            border: none;
+            color: white;
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="form">
+        <div class="card">
+            <div class="card-sign">
+                <h1>SIGN IN</h1>
+            </div>
+            <div class="">
+                <label for="" class="label">Username</label>
+                <input type="text" placeholder="Enter username">
+            </div>
+            <div class="">
+                <label for="" class="label">Password</label>
+                <input type="text" placeholder="Enter password">
+            </div>
+            <div class="check">
+                <input type="checkbox"><span style="color: gray;">Remember me</span>
+                <a href="#">Forgot Password?</a>
+            </div>
+            <div class="btn">
+                <input type="button" value="Login">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form Design IV</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <style>
+        .form{
+            width: 100%;
+            display: flex;
+        }
+        .font{
+            width: 70%;
+            height: 600px;
+            background-color: rgb(219, 68, 219);
+            background-image: linear-gradient(rgba(219, 68, 219,0.2),rgba(214, 21, 118,0.9));
+        }
+        img{
+            width: 100%;
+            opacity: 0.4;
+            height: 600px;
+        }
+        .login{
+            margin-left: 40px;
+        }
+        input[type=text],input[type=password] {
+            width: 300px;
+            padding: 12px 0;
+            margin-bottom: 30px;
+            box-sizing: border-box;
+            border: none;
+            border-bottom: 1px solid gray;
+            outline: none;
+        }
+        .sign{
+            margin-top: 10px;
+        }
+        input[type=submit]{
+            padding: 10px 30px;
+            width: 200px;
+            border-radius: 13px;
+            border: none;
+            background-color: rgb(245, 78, 161);
+            color: white;
+            outline: none;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="form">
+        <div class="font">
+            <img src="img/four.png" alt="">  
+        </div>
+        <div class="login">
+            <h1>Sign Up</h1>
+            <div class="login-form">
+                <label for="">Full Name</label><br>
+                <input type="text" placeholder="Name...">
+            </div>
+            <div class="login-form">
+                <label for="">Email</label><br>
+                <input type="text" placeholder="Email address...">
+            </div>
+            <div class="login-form">
+                <label for="">Username</label><br>
+                <input type="text" placeholder="Username...">
+            </div>
+            <div class="login-form">
+                <label for="">Password</label><br>
+                <input type="password" placeholder="****************">
+            </div>
+            <div class="login-form">
+                <label for="">Repeat Password</label><br>
+                <input type="password" placeholder="****************">
+            </div>
+            <div class="login-form">
+                <input type="checkbox"><span style="color: rgb(168, 161, 161);">I agree to the Terms of Users</span>
+            </div>
+            <div class="sign">
+                <input type="submit" value="Sign Up">
+                <a style="margin-left: 30px;color: rgb(168, 161, 161);text-decoration: none;" href="#">Sign in <i class="fas fa-long-arrow-alt-right" style="padding-left:7px;color: rgb(168, 161, 161);;"></i></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

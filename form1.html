@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form Design I</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <style>
+        .card-container{
+            background-image: url(img/one.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 600px;
+            padding: 30px;
+        }
+        .card{
+            width: 300px;
+            height: 500px;
+            margin: auto;
+            background-color: #fcf5f5;
+            border-radius: 7px;
+        }
+        .login-form{
+            text-align: center;
+            padding-top: 20px;
+        }
+        input[type=text],input[type=password]{
+            padding: 15px 30px;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            border: none;
+            outline: none;
+        }
+        input[type=submit]{
+            background-color: rgb(228, 28, 228);
+            padding: 15px 40px;
+            color: white;
+            border-radius: 20px;
+            border: none;
+        }
+        .login-other{
+            margin-top: 50px;
+            text-align: center;
+        }
+        .bac{
+            width: 35px;
+            height: 35px;
+            background-color:white;
+            border-radius: 50%;
+            float: left;
+            margin-left: 10px;
+            position: relative;
+            left: 34%;
+            box-shadow: 3px 3px 8px 0 rgba(5, 58, 23, 0.5), 3px 3px 20px 0 rgba(245, 37, 245, 0.19);
+        }
+        .bac i{
+            padding-top: 10px;
+            font-size: 20px;
+            color: rgb(87, 87, 245);
+        }
+        .sign-up{
+            display: inline-block;
+            margin-top: 120px;
+            /* text-align: center; */
+            margin-right: 80px;
+            text-decoration: none;color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="card-container">
+        <div class="card">
+            <div class="login-form">
+                <h1>Sign In</h1>
+                <input type="text" placeholder="username or email"><br>
+                <input type="password" placeholder="password"><br>
+                <input type="submit" value="SIGN IN">
+            </div>
+            <div class="login-other">
+                <p>Or login with</p>
+                <div class="bac">
+                    <i class="fab fa-facebook-f"></i>
+                </div>
+                <div class="bac">
+                    <i class="fab fa-google" style="color: rgb(11, 179, 11);"></i>
+                </div>
+                <a class="sign-up" href="#">Sign Up</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

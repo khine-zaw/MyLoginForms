@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form Design II</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <style>
+        .card-container{
+            background-color:rgb(235, 27, 155);
+            background-image: linear-gradient(rgb(235, 27, 155),blue);
+            background-size: 100% 600px;
+            padding: 30px;
+        }
+        .card{
+            width: 300px;
+            height: 500px;
+            margin: auto;
+            background-color: white;
+            border-radius: 7px;
+            text-align: center;
+            padding-top: 20px;
+        }
+        input{
+            padding: 15px 20px;
+            margin:4px;
+            /* box-sizing: border-box; */
+            padding-left:60px;
+            border-radius: 10px;
+            background-color: #f5ebeb;
+            border: none;
+            outline: none;
+        }
+        .inside-icon{
+            position: relative;
+            margin-bottom: 10px;
+        }
+        .inside-icon i{
+            position: absolute;
+            left:25px;
+            top:6px;
+            padding:10px 10px;
+            font-size: 20px;
+            color: rgb(90, 90, 241);
+        }
+        .checkbox{
+            /* padding: 20px; */
+            text-align: left;
+        }
+        .checkbox input{
+            margin-left: 30px;
+        }
+        .checkbox span{
+            color: rgb(158, 149, 149);
+        }
+        input[type=button]{
+            /* width: 300px; */
+            width: 250px;
+            padding: 15px 20px;
+            margin-top: 20px;
+            color: white;
+            background-color: rgb(252, 47, 125);
+        }
+        .social{
+            /* width: 250px; */
+            text-align: left;
+            display: flex;
+            margin-left: 26px;
+        }
+        .social-f{
+            padding: 6px 20px;
+            border: 1px solid rgb(158, 149, 149);
+            color: rgb(46, 46, 248);
+            border-radius: 5px;
+        }
+        .social-g{
+            padding: 6px 20px;
+            border: 1px solid rgb(158, 149, 149);
+            color: rgb(9, 219, 9);
+            margin-left: 5px;
+            border-radius: 5px;
+        }
+        .social-f span,.social-g span{
+            padding-left: 5px;
+        }
+        .sign{
+            /* border-bottom: 2px solid gray; */
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+    <div class="card-container">
+        <div class="card">
+            <h1>LOGIN</h1>
+
+            <div class="inside-icon">
+                <input type="text" placeholder="Email">
+                <i class="far fa-envelope"></i>
+            </div>
+
+            <div class="inside-icon">
+                <input type="text" placeholder="Password">
+                <i class="fas fa-lock"></i>
+            </div>
+
+            <div class="checkbox">
+                <input type="checkbox"><span>Remember me</span>
+            </div>
+
+            <div class="inside-icon">
+                <input type="button" value="LOGIN">
+            </div>
+            <p style="color: white;margin-top: 30px;">Or login with</p>
+
+            <div class="social">
+                <div class="social-f">
+                    <i class="fab fa-facebook"></i><span>Facebook</span>
+                </div>
+                <div class="social-g">
+                    <i class="fab fa-google"></i><span>Google</span>
+                </div>
+            </div>
+
+            <p style="margin-top: 60px; color: rgb(158, 149, 149);" href="#">Not a member?<a class="sign" href="#"> Sign up now</a></p>
+        </div>
+    </div>
+</body>
+</html>

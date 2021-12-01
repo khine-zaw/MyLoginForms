@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form Design VII</title>
+    <style>
+        body{
+            background-color: #f2f2f2;
+        }
+        .form{
+            width: 600px;
+            height: 400px;
+            margin: auto;
+            background-color:white;
+            margin-top: 100px;
+            display: flex;
+        }
+        .image{
+
+        }
+        img{
+            width: 300px;
+            height: 400px;
+        }
+        .login{
+            /* width: 300px; */
+            margin-top: 50px;
+        }
+        .min{
+            display: flex;
+            margin-top: 30px;
+            padding: 20px;
+        }
+        input[type=text],input[type=password]{
+            width: 80px;
+            padding: 10px 20px;
+            /* border-radius: 5px; */
+            /* border-left: 2px solid gray; */
+            outline: none;
+        }
+        input[type=button]{
+            width: 250px;
+            padding: 8px 20px;
+            margin-left: 20px;
+            background-color: rgb(3, 129, 3);
+            border: none;
+            color: white;
+            border-radius: 8px;
+        }
+        .forgot{
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="form">
+        <div class="image">
+            <img src="img/my.jpg" alt="">
+        </div>
+        <div class="login">
+            <h3 style="text-transform: uppercase;text-align: center;color: gray;">account login</h3>
+            <div class="min">
+                <div class="">
+                    <input type="text" placeholder="User name">
+                </div>
+                <div class="">
+                    <input type="password" placeholder="Password">
+                </div>
+            </div>
+            <div class="btn">
+                <input type="button" value="SIGN IN">
+            </div>
+            <div class="forgot">
+                <a href="#" style="text-decoration: none;font-size: 15px;margin-top: 20px;color: gray;">Forgot <span style="color: rgb(3, 129, 3);">User name / password?</span></a>
+            </div>
+            <div style="text-align: center;margin-top: 90px;">
+                <a href="#" style="color: rgb(3, 129, 3);text-decoration: none;">SIGN UP</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

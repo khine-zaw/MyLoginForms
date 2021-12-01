@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form Design III</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <style>
+        .card-container{
+            background-color: rgb(93, 205, 240);
+            background-image: linear-gradient(rgb(93, 205, 240),rgb(14, 100, 211));
+            background-size: 100% 600px;
+            padding: 30px;
+        }
+        .card{
+            width: 300px;
+            height: 500px;
+            margin: auto;
+            /* background-color: white; */
+            border-radius: 7px;
+            text-align: center;
+            padding-top: 20px;
+        }
+        h3{
+            color: white;
+        }
+        img{
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+        }
+        input{
+            padding: 15px 20px;
+            margin:4px;
+            width: 250px;
+            /* box-sizing: border-box; */
+            padding-left:60px;
+            border-radius: 20px;
+            background-color: #f5ebeb;
+            border: none;
+            align-items: center;
+            outline: none;
+        }
+        .inside-icon{
+            position: relative;
+            margin-bottom: 10px;
+            
+        }
+        .inside-icon i{
+            position: absolute;
+            left:20px;
+            top:6px;
+            padding:10px 10px;
+            font-size: 20px;
+            color: rgb(158, 149, 149);
+        }
+        input[type=button]{
+            /* width: 300px; */
+            width: 330px;
+            padding: 15px 20px;
+            margin-top: 20px;
+            color: white;
+            background-color:rgb(73, 72, 72);
+        }
+    </style>
+</head>
+<body>
+    <div class="card-container">
+        <div class="card">
+            <img src="img/me.jpg" alt="">
+            <h3>Khaing Zaw</h3>
+
+            <div class="inside-icon">
+                <input type="text" placeholder="Username">
+                <i class="far fa-user"></i>
+            </div>
+            <div class="inside-icon">
+                <input type="text" placeholder="Password">
+                <i class="fas fa-lock"></i>
+            </div>
+            <div class="inside-icon">
+                <input type="button" value="LOGIN">
+            </div>
+            <a style="color: rgb(226, 221, 221);text-decoration: none;" href="#">Forgot Username / Password?</p>
+            <a style="color: rgb(226, 221, 221);margin-top: 130px;text-decoration: none;" href="#">Create new account<i class="fas fa-long-arrow-alt-right" style="padding-left:7px;"></i></a>
+        </div>
+    </div>
+</body>
+</html>

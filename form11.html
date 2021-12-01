@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form Design 11</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <style>
+        .form{
+            background-image: url(img/login.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 800px,contain;
+            padding: 60px;
+
+        }
+        .login{
+            margin: auto;
+            /* background-color: red; */
+            width: 500px;
+            height: 400px;
+        }
+        input[type=text]{
+            padding: 10px 20px;
+            border-radius: 20px;
+            width: 250px;
+            margin-left: 20%;
+            border: none;
+            outline: none;
+            margin-bottom: 20px;
+            background-color: rgba(245, 236, 236, 0.6);
+            color: white;
+        }
+        .pass{
+            position: relative;
+        }
+        .pass i{
+            position: absolute;
+            right: 25%;
+            top: 10px;
+        }
+        input[type=password]{
+            padding: 10px 20px;
+            border-radius: 20px;
+            width: 250px;
+            margin-left: 20%;
+            border: none;
+            outline: none;
+            background-color: rgba(245, 236, 236, 0.6);
+            color: white;
+        }
+        input[type=button]{
+            margin-top: 20px;
+            padding: 10px 20px;
+            border-radius: 20px;
+            width: 290px;
+            margin-left: 20%;
+            background-color: #f7d69a;
+            color: white;
+            border: none;
+            outline: none;
+        }
+        ::placeholder{
+            color: white;
+        }
+        .check{
+            margin-top: 20px;
+            margin-left: 20%;
+        }
+        .linear_checkbox:checked:after {
+            content: "\2714";
+            border-radius: 3px;
+            display: block;
+            text-align: center;
+            font-size: 10px;
+            background-color: #f7d69a;
+            color: white;
+        }
+        .btn{
+            text-align: center;
+        }
+        button{
+            padding: 10px 20px;
+            width: 140px;
+            border-radius: 6px;
+            border: none;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="form">
+        <div class="login">
+            <h2 style="text-align: center;color: white;">Have an account?</h2>
+            <div class="">
+                <input type="text" placeholder="Username">
+            </div>
+            <div class="pass">
+                <i class="far fa-eye" style="color: white;"></i>
+                <input type="password" placeholder="Password">        
+            </div>
+            <div class="pass">
+                <input type="button" value="SIGN IN">        
+            </div>
+            <div class="check">
+                <input type="checkbox" class="linear_checkbox"><span style="color: #f7d69a;">Remember Me</span>
+                <a href="#" style="text-decoration: none;color: white;margin-left: 15%;">Forgot Password</a>
+            </div>
+            <p style="text-align: center;color: white;">- Or Sign In With -</p> 
+            <div class="btn">
+                <button>Facebook</button>
+                <button>Twitter</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

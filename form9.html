@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form Design 9</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <style>
+        body{
+            background-color: #f2f2f2;
+        }
+        .form{
+            width: 800px;
+            height: 400px;
+            display: flex;
+            margin: auto;
+            margin-top: 7%;
+        }
+        .login-form{
+            width: 400px;
+            height: 400px;
+            background-color: white;
+        }
+        .sign{
+            padding-top: 40px;  
+            padding-left: 30px;
+            position: relative;  
+        }
+        .title{
+            float: left;
+            font-size: 30px;
+            margin-top: 10px;
+        }
+        .social{
+            float: right;
+            width: 35px;
+            height: 35px;
+            background-color: #f2f2f2;
+            border-radius: 50%;
+            text-align: center;
+            margin-right: 20px;
+        }
+        .social i{
+            padding-top: 10px;
+            color: gray;
+        }
+        .text{
+            margin-top: 100px;
+            margin-left: 35px;
+        }
+        label{
+            text-transform: uppercase;
+            font-size: 15px;
+        }
+        input[type=text],input[type=password]{
+            margin: 15px;
+            padding: 9px 20px;
+            border-radius: 20px;
+            border: none;
+            outline: none;
+            width: 250px;
+            background-color: #f2f2f2;
+        }
+        input[type=button]{
+            margin: 15px;
+            padding: 9px 20px;
+            border-radius: 20px;
+            border: none;
+            outline: none;
+            width: 290px;
+            color: white;
+            background-color: #ff1100;
+            background-image: linear-gradient(to right,#ff1100,#f81d54);
+        }
+        .linear_checkbox:checked:after {
+            content: "\2714";
+            border-radius: 3px;
+            display: block;
+            text-align: center;
+            font-size: 10px;
+            background-color: #ff1100;
+            color: white;
+        }
+        .welcome{
+            background-color: #ff1100;
+            background-image: linear-gradient(to right,#ff1100,#f81d54);
+            width: 400px;
+        }
+        .content{
+            text-align: center;
+            margin-top: 30%;
+            color: white;
+        }
+        button{
+            padding: 10px 20px;
+            border-radius: 20px;
+            outline: none;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="form">
+        <div class="login-form">
+            <div class="sign">
+                <div class="title">
+                    <span>Sign In</span>
+                </div>
+                <div class="social">
+                    <i class="fab fa-twitter"></i>
+                </div>
+                <div class="social">
+                    <i class="fab fa-facebook-f"></i>    
+                </div>
+            </div>
+            <div class="text">
+                <label for="">Username</label><br>
+                <input type="text" placeholder="Username">
+
+                <label for="">Password</label><br>
+                <input type="password" placeholder="Password">
+
+                <input type="button" value="Sign In"><br>
+
+                <input type="checkbox" class="linear_checkbox"><span style="color: #ff1100;">Remember Me</span>
+                <a href="#" style="text-decoration: none;color: gray;margin-left: 20%;">Forgot Password</a>    
+            </div>
+        </div>
+        <div class="welcome">
+            <div class="content">
+                <h1>Welcome to login</h1>
+                <p>Don't have an account?</p>
+                <button>Sign Up</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

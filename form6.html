@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form Design VI</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">\
+    <style>
+        .form{
+            background-color: rgb(208, 240, 28);
+            background-image: linear-gradient(rgb(208, 240, 28),rgb(245, 87, 39));
+            background-size: 100% 900px;
+            padding: 50px;
+        }
+        .form h2{
+            text-transform: uppercase;
+            text-align: center;
+            color: white;
+        }
+        .login{
+            margin: auto;
+            width: 400px;
+            height: 350px;
+            background-color: white;
+            /* background-color: #f2f2f2; */
+        }
+        .text{
+            margin-left: 20px
+        }
+        .text i{
+            color: gray;
+        }
+        input[type=text],input[type=password]{
+            /* border-bottom: 2px solid gray; */
+            margin-top: 30px;
+            margin-bottom: 20px;
+            padding: 20px;
+            outline: none;
+            border: none;
+        }
+        .btn{
+            margin-top: 40px;
+            text-align: center;
+        }
+        input[type=button]{
+            padding: 9px 30px;
+            width: 150px;
+            border-radius: 20px;
+            /* background-color: rgb(247, 33, 97); */
+            background-color: rgb(143, 6, 131);
+            background-image: linear-gradient(to right,rgb(143, 6, 131),rgb(247, 33, 97));
+            color: white;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="form">
+        <h2>account login</h2>
+        <div class="login">
+            <div class="text">
+                <i class="far fa-user"></i>
+                <input type="text" placeholder="User name">
+            </div>
+            <hr>
+            <div class="text">
+                <i class="fas fa-lock"></i>
+                <input type="password" placeholder="Password">
+            </div>
+            <hr>
+            <div class="btn">
+                <input type="button" value="LOGIN">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
